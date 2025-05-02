@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--text-font-family);
 }
 
 :root {
@@ -58,7 +59,6 @@
     background-color: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     border-radius: 0;
 }
@@ -82,7 +82,6 @@
     padding: var(--default-padding);
     margin: 0 auto;
     max-width: var(--max-width);
-    font-family: var(--text-font-family);
 }
 
 .welcome-section h1 {
@@ -123,7 +122,6 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    font-family: var(--text-font-family);
 }
 
 .service-tile {
@@ -167,7 +165,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
+
+/* About Us Section - Left Images Grid */
 .images-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,4 +192,80 @@
 .images-grid img:nth-child(3) {
     align-self: start;
     justify-self: end;
+}
+
+/*  About Us Section - Right About Us Content*/
+.about-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.sub-heading-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sub-heading {
+    font-size: 16px;
+    font-family: 'Pacifico';
+    color: var(--primary-color);
+    /* margin-bottom: 10px; */
+}
+.horizontal-bar {
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+.main-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.icon-inline {
+    margin: 0;
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    color: var(--primary-color);
+}
+.about-paragraph {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #444;
+}
+.stats {
+    display: flex;
+    justify-content: left;
+    gap: 25%;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.stat-item {
+    display: flex;
+    align-items: center;
+}
+.bar {
+    width: 4px;
+    height: 48px;
+    background-color: var(--primary-color);
+    margin-right: 12px;
+}
+.stat-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.stat-label {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+}
+.about-btn {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    width: 25%;
 }
