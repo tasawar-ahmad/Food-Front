@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FEA116;
+    --background-color: #E6F7FF;
+    --max-width: 1200px;
+    --default-padding: 60px 24px;
+    --text-font-family: 'Poppins';
+}
+
+/* header and nav bar */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 48px;
+}
+
+.site-name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One';
+    color: var(--primary-color);
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-section a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-section a:hover {
+    color: var(--primary-color);
+}
+
+.book-table-btn {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.book-table-btn:hover {
+    background-color: white;
+    color: var(--primary-color)
+}
+
+.main-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/bg-steak.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* welcome section */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--default-padding);
+    margin: 0 auto;
+    max-width: var(--max-width);
+    font-family: var(--text-font-family);
+}
+
+.welcome-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.welcome-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.rotating-platter-img img {
+    width: 350px;
+    animation: rotateImage 10s linear infinite;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Services Section */
+.services-section {
+    padding: var(--default-padding);
+    background-color: white;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: var(--text-font-family);
+}
+
+.service-tile {
+    flex: 1 1 calc(25% - 60px);
+    /* 20px * 3 = 60px as there are 3 20px gaps between 4 tiles */
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.service-tile:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.service-icon {
+    width: 55px;
+    height: 40px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.service-tile:hover .service-icon {
+    color: white;
+}
+
+.service-tile h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* About Us Section */
+.about-section {
+    background-color: var(--background-color);
+}
+.about-container {
+    max-width: var(--max-width);
+    padding: var(--default-padding);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.image {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.image.small {
+    height: 190px;
+}
+.image.large {
+    height: 250px;
+}
+.images-grid img:nth-child(2) {
+    align-self: end;
+    justify-self: start;
+}
+.images-grid img:nth-child(3) {
+    align-self: start;
+    justify-self: end;
+}
