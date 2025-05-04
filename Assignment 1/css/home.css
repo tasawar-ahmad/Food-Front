@@ -64,8 +64,7 @@
 }
 
 .book-table-btn:hover {
-    background-color: white;
-    color: var(--primary-color)
+    background-color: #d87e0c;
 }
 
 .main-page {
@@ -158,6 +157,7 @@
 .about-section {
     background-color: var(--background-color);
 }
+
 .about-container {
     max-width: var(--max-width);
     padding: var(--default-padding);
@@ -174,21 +174,26 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+
 .image {
     width: auto;
     height: auto;
     object-fit: contain;
 }
+
 .image.small {
     height: 190px;
 }
+
 .image.large {
     height: 250px;
 }
+
 .images-grid img:nth-child(2) {
     align-self: end;
     justify-self: start;
 }
+
 .images-grid img:nth-child(3) {
     align-self: start;
     justify-self: end;
@@ -201,26 +206,31 @@
     flex-direction: column;
     /* justify-content: center; */
 }
+
 .sub-heading-container {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 .sub-heading {
     font-size: 16px;
     font-family: 'Pacifico';
     color: var(--primary-color);
     /* margin-bottom: 10px; */
 }
+
 .horizontal-bar {
     width: 40px;
     height: 2px;
     background-color: var(--primary-color);
 }
+
 .main-heading {
     font-size: 32px;
     margin-bottom: 20px;
 }
+
 .icon-inline {
     margin: 0;
     display: inline-flex;
@@ -228,11 +238,13 @@
     height: 42px;
     color: var(--primary-color);
 }
+
 .about-paragraph {
     font-size: 16px;
     margin-bottom: 12px;
     color: #444;
 }
+
 .stats {
     display: flex;
     justify-content: left;
@@ -240,26 +252,31 @@
     margin: 20px 0;
     flex-wrap: wrap;
 }
+
 .stat-item {
     display: flex;
     align-items: center;
 }
+
 .bar {
     width: 4px;
     height: 48px;
     background-color: var(--primary-color);
     margin-right: 12px;
 }
+
 .stat-number {
     font-size: 40px;
     font-weight: bold;
     color: var(--primary-color);
 }
+
 .stat-label {
     display: flex;
     flex-direction: column;
     margin: 0 16px;
 }
+
 .about-btn {
     padding: 8px 16px;
     background-color: var(--primary-color);
@@ -269,9 +286,10 @@
     border-radius: 0;
     width: 25%;
 }
+
 .about-btn:hover {
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    background-color: #d87e0c;
+    ;
 }
 
 /* Menu Section */
@@ -283,40 +301,105 @@
     margin: 0 auto;
     padding: var(--default-padding);
 }
+
 .menu-tabs {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-  }
-  .tab {
+}
+
+.tab {
     display: flex;
     padding: 5px 10px;
     cursor: pointer;
     gap: 20px;
-  }
-  .tab.active {
+}
+
+.tab.active {
     border-bottom: 2px solid var(--primary-color);
-  }
-  .menu-list {
+}
+
+.menu-list {
     display: flex;
     gap: 25px;
     margin-top: 20px;
-  }
-  .menu-item {
+}
+
+.menu-item {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 25px;
-  }
-  .menu-item img {
+}
+
+.menu-item img {
     width: 60px;
     height: 60px;
     object-fit: cover;
     border-radius: 8px;
-  }
-  .price {
+}
+
+.price {
     margin-left: auto;
     font-weight: bold;
     color: var(--primary-color);
-  }
-  
+}
+
+/* Reservation Section */
+.reservation-section {
+    display: flex;
+}
+.reservation-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reservation-left,
+.reservation-right {
+    flex: 1;
+}
+.reservation-right {
+    background-color: #0b1320;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+.input-row input,
+.input-row select {
+    flex: 1;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+}
+textarea {
+    padding: 12px;
+    min-height: 100px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+.reservation-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.reservation-btn:hover {
+    background-color: #d87e0c;
+}
