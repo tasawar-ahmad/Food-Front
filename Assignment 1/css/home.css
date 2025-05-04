@@ -224,8 +224,8 @@
 .icon-inline {
     margin: 0;
     display: inline-flex;
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     color: var(--primary-color);
 }
 .about-paragraph {
@@ -269,3 +269,54 @@
     border-radius: 0;
     width: 25%;
 }
+.about-btn:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    align-items: center;
+    margin: 0 auto;
+    padding: var(--default-padding);
+}
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .tab {
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+    gap: 20px;
+  }
+  .tab.active {
+    border-bottom: 2px solid var(--primary-color);
+  }
+  .menu-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  .menu-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .price {
+    margin-left: auto;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
